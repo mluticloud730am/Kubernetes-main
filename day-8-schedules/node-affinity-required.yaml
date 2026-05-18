@@ -26,8 +26,8 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
               - matchExpressions:
-                  - key: size
+                  - key: clr
                     operator: In
                     values:
-                      - medium
-                      - small
+                      - white
+                      - green
