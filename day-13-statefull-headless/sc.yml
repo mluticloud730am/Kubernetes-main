@@ -9,6 +9,7 @@ provisioner: ebs.csi.aws.com
 allowVolumeExpansion: true   
 
 volumeBindingMode: WaitForFirstConsumer
+#volumeBindingMode: immediate
 
 reclaimPolicy: Delete
 
