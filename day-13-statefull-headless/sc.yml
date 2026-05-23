@@ -11,7 +11,9 @@ allowVolumeExpansion: true
 volumeBindingMode: WaitForFirstConsumer
 #volumeBindingMode: immediate
 
-reclaimPolicy: Delete
+reclaimPolicy: Delete #if pvc delete automatically EBS delete
+#reclaimPolicy: Retain #if pvc delete staill  EBS is there not delete untill delete manually ebs levele 
+
 
 parameters:
   type: gp3
